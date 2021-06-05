@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="APPWebECom:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>APPWebECom</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="APPWebECom-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="APPWebECom:war exploded" />
+    </root>
+  </artifact>
+</component>
