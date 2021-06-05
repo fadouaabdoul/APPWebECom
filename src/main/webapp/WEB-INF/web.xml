@@ -7,10 +7,28 @@
         <servlet-name>ServletHome</servlet-name>
         <url-pattern>/Home</url-pattern>
     </servlet-mapping>
-<servlet>
-<servlet-name>ServletHome</servlet-name>
-<servlet-class>com.APPWebECom.APPWebECom.Servlet.ServletHome</servlet-class>
-</servlet>
+    <servlet>
+    <servlet-name>ServletHome</servlet-name>
+    <servlet-class>com.APPWebECom.APPWebECom.Servlet.ServletHome</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletClientCreate</servlet-name>
+        <url-pattern>/Client</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ServletClientCreate</servlet-name>
+        <servlet-class>com.APPWebECom.APPWebECom.Servlet.ServletClientCreate</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ServletCommandeCreate</servlet-name>
+        <url-pattern>/Commande</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ServletCommandeCreate</servlet-name>
+        <servlet-class>com.APPWebECom.APPWebECom.Servlet.ServletCommandeCreate</servlet-class>
+    </servlet>
 
 </web-app>
 
