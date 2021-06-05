@@ -12,8 +12,6 @@
 </head>
 <body>
 <h1>Welcome</h1>
-<form action="Welcome" method="post">
-    <button type="button" onclick=""> Next </button>
-</form>
+<a href="Client">Create your account from here</a>
 </body>
 </html>

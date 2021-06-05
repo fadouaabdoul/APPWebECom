@@ -30,6 +30,12 @@
         <servlet-class>com.APPWebECom.APPWebECom.Servlet.ServletCommandeCreate</servlet-class>
     </servlet>
 
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
 </web-app>
 
 
