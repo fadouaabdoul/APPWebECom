@@ -1,5 +1,7 @@
 package com.APPWebECom.APPWebECom.Servlet;
 
+import com.APPWebECom.APPWebECom.Beans.Client;
+
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
@@ -7,30 +9,35 @@ import java.io.IOException;
 
 public class ServletClientCreate extends HttpServlet {
 
-   /** public static final String CHAMP_NAME = "Name";
-    public static final String CHAMP_GENDER = "Gender";
-    public static final String CHAMP_MAIL = "Mail";
-    public static final String CHAMP_NUM_TELE = "Num Tele";**/
+    public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
+        /*
+         * Récupération des données saisies, envoyées en tant que paramètres de
+         *
+         * la requête GET générée à la validation du formulaire
+         */
+        String name = request.getParameter( "name" );
+        String gender = request.getParameter( "gender" );
+        String mail = request.getParameter( "mail" );
+        int phone = Integer.parseInt(request.getParameter( "phone" ));
+        String address = request.getParameter( "address" );
 
 
-    @Override
-    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        this.getServletContext().getRequestDispatcher
-                ("/WEB-INF/CreateClient.jsp").forward( request, response );
+        //create new client  bean  and initialize with the data recuperee
+
+        Client client = new Client();
+
+        client.setName( name );
+        client.setGender(client.gender );
+        client.setMail( mail );
+        client.setNumTele( phone );
+        client.setAddress( address );
 
 
-    }
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        // add the bean on the object query
+        request.setAttribute( "client", client );
 
-       /** String name = request.getParameter(CHAMP_NAME);
-        String gender = request.getParameter( CHAMP_GENDER );
-        String mail = request.getParameter( CHAMP_MAIL );
-        String numTele = request.getParameter( CHAMP_NUM_TELE );**/
-
-
-
-
+        // transfer to the jsp that will show everything
+        this.getServletContext().getRequestDispatcher( "/RecapClient.jsp" ).forward( request, response );
     }
 
 

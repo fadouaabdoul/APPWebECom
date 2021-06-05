@@ -19,6 +19,23 @@ public class Client {
         this.address = address;
     }
 
+
+    public boolean isGender() {
+        return gender;
+    }
+
+    public void setGender(boolean gender) {
+        this.gender = gender;
+    }
+
+    public int getNumTele() {
+        return numTele;
+    }
+
+    public void setNumTele(int numTele) {
+        this.numTele = numTele;
+    }
+
     public int getIdClient() {
         return idClient;
     }

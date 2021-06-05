@@ -14,7 +14,7 @@
 <body>
 
 <h1>Client Space</h1>
-<form action="Commande" method="post">
+<form action="Client" method="get">
 
     <fieldset>
         <legend>Create Client</legend>
@@ -30,17 +30,15 @@
         <br />
         <br>
 
-        <label for="lastname">Last Name <span class="requis">*</span></label>
-        <input type="text" id="lastname" name="lastname" value="" size="20" maxlength="20" />
-        <br /> <br>
 
-        <label for="adresse">Adresse de livraison <span class="requis">*</span></label>
-        <input type="text" id="adresse" name="adresse" value="" size="20" maxlength="20" />
+
+        <label for="address">Adresse de livraison <span class="requis">*</span></label>
+        <input type="text" id="address" name="address" value="" size="20" maxlength="20" />
         <br />
         <br>
 
-        <label for="email">Adresse email <span class="requis">*</span></label>
-        <input type="text" id="email" name="email" value="" size="20" maxlength="60" />
+        <label for="mail">Adresse email <span class="requis">*</span></label>
+        <input type="text" id="mail" name="mail" value="" size="20" maxlength="60" />
         <br />
         <br>
 

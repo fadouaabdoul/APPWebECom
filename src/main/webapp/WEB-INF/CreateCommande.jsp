@@ -13,7 +13,7 @@
 </head>
 <body>
 <h1>Create a command</h1>
-<form action="Commande" method="post">
+<form action="Commande" method="get">
 
 
     <fieldset>

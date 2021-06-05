@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class Commande {
         public int idCom;
+        public Client client ;
         public Date dateCom;
         public float montant;
 
@@ -13,6 +14,14 @@ public class Commande {
         this.idCom = idCom;
         this.dateCom = dateCom;
         this.montant = montant;
+    }
+
+    public Client getClient() {
+        return client;
+    }
+
+    public void setClient(Client client) {
+        this.client = client;
     }
 
     public int getIdCom() {
@@ -47,4 +56,6 @@ public class Commande {
                 ", montant=" + montant +
                 '}';
     }
+
+
 }
