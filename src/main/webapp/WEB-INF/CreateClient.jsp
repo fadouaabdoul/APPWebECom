@@ -14,7 +14,7 @@
 <body>
 
 <h1>Client Space</h1>
-<form action="Client" method="get">
+<form action="Client" method="POST">
 
     <fieldset>
         <legend>Create Client</legend>

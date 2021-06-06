@@ -10,11 +10,11 @@ import java.io.IOException;
 public class ServletClientCreate extends HttpServlet {
 
     public void doGet( HttpServletRequest request, HttpServletResponse response ) throws ServletException, IOException {
-        /*
-         * Récupération des données saisies, envoyées en tant que paramètres de
-         *
-         * la requête GET générée à la validation du formulaire
-         */
+
+        this.getServletContext().getRequestDispatcher
+                ( "/WEB-INF/CreateClient.jsp" ).forward( request, response );
+    }
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String name = request.getParameter( "name" );
         String gender = request.getParameter( "gender" );
         String mail = request.getParameter( "mail" );
@@ -37,8 +37,7 @@ public class ServletClientCreate extends HttpServlet {
         request.setAttribute( "client", client );
 
         // transfer to the jsp that will show everything
-        this.getServletContext().getRequestDispatcher( "/RecapClient.jsp" ).forward( request, response );
+        this.getServletContext().getRequestDispatcher( "WEB-INF/RecapClient.jsp" ).forward( request, response );
     }
-
 
 }

@@ -13,12 +13,16 @@ import java.util.Date;
 public class ServletCommandeCreate extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        this.getServletContext().getRequestDispatcher
+                ( "/WEB-INF/CreateCommande.jsp" ).forward( request, response );
 
+    }
+
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         Client client = (Client) request.getAttribute( "client" );
         Date dateCom = (Date) request.getAttribute( "date" );
         float montant = Float.parseFloat(request.getParameter( "montant" ));
-
-
 
 
 
@@ -27,16 +31,9 @@ public class ServletCommandeCreate extends HttpServlet {
         commande.setDateCom( dateCom );
         commande.setMontant( montant );
 
-        /* Ajout du bean et du message à l'objet requête */
         request.setAttribute( "commande", commande );
 
-        /* Transmission à la page JSP en charge de l'affichage des données */
-        this.getServletContext().getRequestDispatcher( "/RecapCommande.jsp" ).forward( request, response );
-
-    }
-
-    @Override
-    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        this.getServletContext().getRequestDispatcher( "WEB-INF/RecapCommande.jsp" ).forward( request, response );
 
     }
 }
