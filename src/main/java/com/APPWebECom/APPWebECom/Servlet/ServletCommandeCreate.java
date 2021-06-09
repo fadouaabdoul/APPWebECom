@@ -33,7 +33,7 @@ public class ServletCommandeCreate extends HttpServlet {
 
         request.setAttribute( "commande", commande );
 
-        this.getServletContext().getRequestDispatcher( "WEB-INF/RecapCommande.jsp" ).forward( request, response );
+        this.getServletContext().getRequestDispatcher( "/WEB-INF/RecapCommande.jsp" ).forward( request, response );
 
     }
 }

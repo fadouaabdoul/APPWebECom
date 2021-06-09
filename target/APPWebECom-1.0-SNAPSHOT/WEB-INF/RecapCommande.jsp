@@ -13,7 +13,7 @@
 </head>
 <body>
 <p>Commande</p>
-<p>Date  : ${ commande.date }</p>
+<p>Date  : ${ commande.dateCom }</p>
 <p>Montant  : ${ commande.montant }</p>
 </body>
 </html>

@@ -29,7 +29,7 @@
         <input type="text" id="montant" name="montant" value="" size="20" maxlength="20" />
         <br />
         <br>
-
+<!--
         <label for="modepaiment">Mode de paiment <span class="requis">*</span></label>
         <input type="text" id="modepaiment" name="modepaiment" value="" size="20" maxlength="20" />
         <br /> <br>
@@ -51,7 +51,6 @@
         <input type="text" id="statuslivraison" name="statuslivraison" value="" size="20" maxlength="20" />
         <br /> <br>
 
-
         <select name="Products">
             <option value="0" selected>(please select:)</option>
             <option value="Laptop"> Laptop</option>
@@ -60,6 +59,8 @@
             <option value="Headphones"> Headphones</option>
         </select>
         <br>
+        -->
+
 
         <br>
 
