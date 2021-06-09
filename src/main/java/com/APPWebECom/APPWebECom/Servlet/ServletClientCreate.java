@@ -37,7 +37,7 @@ public class ServletClientCreate extends HttpServlet {
         request.setAttribute( "client", client );
 
         // transfer to the jsp that will show everything
-        this.getServletContext().getRequestDispatcher( "WEB-INF/RecapClient.jsp" ).forward( request, response );
+        this.getServletContext().getRequestDispatcher( "/WEB-INF/RecapClient.jsp" ).forward( request, response );
     }
 
 }

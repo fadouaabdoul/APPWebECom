@@ -17,7 +17,7 @@
 <p>Nom : ${ client.name }</p>
 <p>Mail : ${ client.mail }</p>
 <p>gender : ${ client.gender }</p>
-<p>Numéro de téléphone : ${ client.phone }</p>
+<p>Numéro de téléphone : ${ client.numTele }</p>
 <p>Email : ${ client.address }</p>
 
 </body>
